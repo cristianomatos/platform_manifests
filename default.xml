@@ -4,10 +4,6 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
-           
-  <remote  name="github"
-           fetch="https://github.com" />
-           
   <default revision="refs/tags/android-7.0.0_r1"
            remote="aosp"
            sync-j="4" />
@@ -536,5 +532,8 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+
+  <!-- Custom additions -->
+  <include name="manifests/cr.xml" />
 
 </manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Remotes -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="cristianomatos/platform_manifests" remote="github" revision="nougat" />
+
+  <!-- Build repositories -->
+  <remove-project name="platform/build" />
+  <project path="build" name="cristianomatos/android_build" remote="github" revision="nougat" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <!-- Vendor -->
+  <project path="vendor/cr" name="cristianomatos/android_vendor_cr" remote="github" revision="nougat" >
+    <copyfile src="build.sh" dest="rom-build.sh" />
+  </project>
+
+  <!-- Device removals -->
+  <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/google/dragon" />
+  <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
+  <remove-project name="device/huawei/angler" />
+  <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/lge/bullhead" />
+  <remove-project name="device/lge/bullhead-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
+
+</manifest>
