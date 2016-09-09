@@ -5,23 +5,6 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <remote  name="muppets"
-           fetch="https://github.com/TheMuppets" />
-
-  <remote  name="tym"
-           fetch="https://github.com/ThankYouMario" />
-
-  <remote  name="aospa"
-           fetch="https://github.com/AOSPA"
-           review="gerrit.aospa.co" />
-
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod"
-           review="review.cyanogenmod.org" />
-
-  <remote  name="cr"
-           fetch="https://github.com/cristianomatos" />
-
   <!-- Manifest -->
   <project path="manifest" name="cristianomatos/platform_manifests" remote="github" revision="nougat" />
 
